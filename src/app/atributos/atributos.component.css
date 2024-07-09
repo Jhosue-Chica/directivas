@@ -1,0 +1,57 @@
+
+/*ngClass Ej1 */
+.class-name {
+  color: red;
+}
+
+/*ngClass Ej2 */
+.status-container{
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+
+.btn-success:hover{
+    background-color: rgb(0, 184, 0);
+}
+
+.btn-inactive {
+  background-color: gray;
+  color: white;
+}
+
+.btn-disabled {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
+
+
+/*ngStyle Ej2 */
+.style-conteiner{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.style-box{
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.controlls{
+    margin: 10px 0;
+}

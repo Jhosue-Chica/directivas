@@ -1,0 +1,76 @@
+.auth-conteiner {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.task-list li {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.completada {
+    background-color: rgb(118, 255, 118);
+    color: white;
+}
+
+.nocompletada {
+    background-color: rgb(255, 93, 93);
+    color: white;
+}
+
+
+.rol-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.rol-buttons {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.admin {
+    background-color: blue;
+    color: rgb(255, 225, 0);
+}
+
+.user {
+    background-color: green;
+    color: rgb(255, 249, 89);
+}
+
+.guest {
+    background-color: gray;
+    color: white;
+}
+
+.default {
+    background-color: lightgray;
+    color: black;
+}

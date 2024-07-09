@@ -1,0 +1,55 @@
+<div>
+    <h1>[ngClass]</h1>
+
+    <div [ngClass]="{'class-name': isClassActive === 'listo'}">
+        Este div tiene una clase condicional
+    </div>
+
+    <div class="status-container">
+        <h2>Estado del Boton</h2>
+        <button [ngClass]="{
+            'btn-success': buttonStatus === 'activo',
+            'btn-inactive': buttonStatus === 'inactivo',
+            'btn-disabled': buttonStatus === 'desabilitado'
+        }">Botón {{buttonStatus}}</button>
+
+        <div class="buttons">
+            <button (click)="chageButtonStatus('activo')">Activo</button>
+            <button (click)="chageButtonStatus('inactivo')">Inactivo</button>
+            <button (click)="chageButtonStatus('desabilitado')">Desabilitado</button>
+        </div>
+    </div>
+
+    <div>
+        <h1>[ngStyle]</h1>
+
+        <div [ngStyle]="{'background-color': bgColor,'color':color}">
+            Este div tiene estilos condicionales
+        </div>
+
+        <div class="style-conteiner">
+            <h2>Estilos dinamicos</h2>
+            <div class="style-box" [ngStyle]="{
+                'font-size': fontSize,
+                'background-color':backgroundColor,
+                'color':colorF}">
+                Este div tiene estilos dinamicos
+            </div>
+
+            <div class="controlls">
+                <label for="font-size">Tamaño de fuente: </label>
+                <input type="number" id="font-size" (change)="changeFontSize($event)">
+            </div>
+            <div class="controlls">
+                <label for="background-color">Color de fondo: </label>
+                <input type="color" id="background-color" (change)="changeBackgroundColor($event)">
+            </div>
+            <div class="controlls">
+                <label for="color">Color de texto</label>
+                <input type="color" id="color" (change)="changeColor($event)">
+            </div>
+            <button (click)="resetStyles()">Reiniciar Estilos</button>
+        </div>
+
+    </div>
+</div>
